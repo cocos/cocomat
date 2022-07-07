@@ -12,6 +12,10 @@
 * 工具组件，如场景管理、截图工具、音频播放、View 管理、内存管理等；
 * 一套自研无层级视频播放器。
 
+### 文档 & demo
+
+<https://demo-edu.cocos.com/>
+
 ### 关于meta文件行尾的问题
 
 检出代码后，打开creator，可能会自动修改meta文件的行尾，导致看到大量meta文件为待提交的状态，可以在命令行输入以下配置，不对文件的行尾进行转换
@@ -24,23 +28,23 @@
 
 | 组件名称 | 组件分类 | 用途 |
 |-------| -----| ----- |
-| [CCMSDFLabel](#) | UI 组件 | 基于SDF的字体渲染实现 |
-| [CCMToast](#) | UI 组件 | 一款类似于 Android Toast 的吐司组件 |
-| [CCMBackBtn](#) | UI 组件 | 返回按钮组件，搭配 CCMSceneManager，风味更佳 |
-| [CCMFitWidget](#) | UI 组件 | 屏幕适配组件 |
-| [CCMPicker](#) | UI 组件 | 选择器组件 |
-| [CCMCategoryView](#) | UI 组件 | 相对复杂的宫格组件 |
-| [CCMVideo](#) | UI 组件 | 一套同层渲染视频组件 |
-| [CCMHanziWriter](#) | UI 组件 | 一个用于 CocosCreator 的 HanziWriter 项目 |
-| [CCMResLoader](#) | 资源组件 | 封装资源的加载和卸载接口 |
-| [CCMResLeakChecker](#) | 资源组件 | 内存泄露检查工具 |
-| [CCMSceneManager](#) | 工具组件 | 受 Android Activity 启动模式启发，将其启动模式复刻到了 CocosCreator |
-| [CCMAudioManager](#) | 工具组件 | 用来播放本地和远程音频文件 |
-| [CCMCapture](#) | 工具组件 | 用来对指定节点进行截图 |
-| [CCMUtils](#) | 工具组件 | 提供一些可以提高开发效率的方法 |
-| [CCMImageLoader](#) | 工具组件 | 图片加载类，动态加载项目中或者远程图片（实验性功能） |
-| [CCMSpineLoader](#) | 工具组件 | 骨骼动画加载类，动态加载项目中或者远程骨骼动画（实验性功能） |
-| [CCMBinding](#) | 工具组件 | 一套在TS中绑定Native方法的框架，旨在抹平不同平台的调用差异（实验性功能） |
+| [CCMSDFLabel](http://demo-edu.cocos.com/guide/CCMSDFLabel.html) | UI 组件 | 基于SDF的字体渲染实现 |
+| [CCMToast](http://demo-edu.cocos.com/guide/CCMToast.html) | UI 组件 | 一款类似于 Android Toast 的吐司组件 |
+| [CCMBackBtn](http://demo-edu.cocos.com/guide/CCMBackBtn.html) | UI 组件 | 返回按钮组件，搭配 CCMSceneManager，风味更佳 |
+| [CCMFitWidget](http://demo-edu.cocos.com/guide/CCMFitWidget.html) | UI 组件 | 屏幕适配组件 |
+| [CCMPicker](http://demo-edu.cocos.com/guide/CCMPicker.html) | UI 组件 | 选择器组件 |
+| [CCMCategoryView](http://demo-edu.cocos.com/guide/CCMCategoryView.html) | UI 组件 | 相对复杂的宫格组件 |
+| [CCMVideo](http://demo-edu.cocos.com/guide/CCMVideo.html) | UI 组件 | 一套同层渲染视频组件 |
+| [CCMHanziWriter](http://demo-edu.cocos.com/guide/CCMHanziWrite.html) | UI 组件 | 一个用于 CocosCreator 的 HanziWriter 项目 |
+| [CCMResLoader](http://demo-edu.cocos.com/guide/CCMResLoader.html) | 资源组件 | 封装资源的加载和卸载接口 |
+| [CCMResLeakChecker](http://demo-edu.cocos.com/guide/CCMResLeakChecker.html) | 资源组件 | 内存泄露检查工具 |
+| [CCMSceneManager](http://demo-edu.cocos.com/guide/CCMSceneManager.html) | 工具组件 | 受 Android Activity 启动模式启发，将其启动模式复刻到了 CocosCreator |
+| [CCMAudioManager](http://demo-edu.cocos.com/guide/CCMAudioManager.html) | 工具组件 | 用来播放本地和远程音频文件 |
+| [CCMCapture](http://demo-edu.cocos.com/guide/CCMCapture.html) | 工具组件 | 用来对指定节点进行截图 |
+| [CCMUtils](http://demo-edu.cocos.com/guide/CCMUtils.html) | 工具组件 | 提供一些可以提高开发效率的方法 |
+| [CCMImageLoader](http://demo-edu.cocos.com/guide/CCMImageLoader.html) | 工具组件 | 图片加载类，动态加载项目中或者远程图片（实验性功能） |
+| [CCMSpineLoader](http://demo-edu.cocos.com/guide/CCMSpineLoader.html) | 工具组件 | 骨骼动画加载类，动态加载项目中或者远程骨骼动画（实验性功能） |
+| [CCMBinding](http://demo-edu.cocos.com/guide/CCMBinding.html) | 工具组件 | 一套在TS中绑定Native方法的框架，旨在抹平不同平台的调用差异（实验性功能） |
 
 ## 项目贡献者
 
