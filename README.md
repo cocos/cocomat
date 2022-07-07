@@ -19,7 +19,7 @@
 `git config --global core.autocrlf false`
 
 ### 特别说明
-由于 GitHub 仓库的大小限制，clone 完成代码后，需要下载 [jsb-default]()，并解压到 cocomat/builtin/目录，使其最终结构为 cocomat/builtin/jsb-default
+由于 GitHub 仓库的大小限制，clone 完成代码后，需要下载 [jsb-default](https://github.com/cocos/cocomat/releases/download/v1.0.0/jsb-default.zip)，并解压到 cocomat/builtin/目录，使其最终结构为 cocomat/builtin/jsb-default
 ## 组件列表
 
 | 组件名称 | 组件分类 | 用途 |
