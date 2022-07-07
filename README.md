@@ -18,6 +18,8 @@
 
 `git config --global core.autocrlf false`
 
+### 特别说明
+由于 GitHub 仓库的大小限制，clone 完成代码后，需要下载 [jsb-default]()，并解压到 cocomat/builtin/目录，使其最终结构为 cocomat/builtin/jsb-default
 ## 组件列表
 
 | 组件名称 | 组件分类 | 用途 |
@@ -44,4 +46,4 @@
 
 按昵称首字母序（排名不分先后）：
 
-[宝爷](https://forum.cocos.org/u/111304)，[bearhuang](https://blog.csdn.net/hbdatouerzi)，[buckethead](https://forum.cocos.org/u/moneycoder)，[陈皮皮](https://gitee.com/ifaswind)，coolcao，[大风起兮云飞扬](https://forum.cocos.org/u/1111926)，[渡鸦](https://forum.cocos.org/u/valiancer)，[galiohuang](https://4ndroidev.github.io/)，[jianfeili](http://lijianfei.com)，[honmono](https://forum.cocos.org/u/1099263878)，hughxnwang，[jrainliu](https://jrainlau.github.io/#/)，[khanzhang](https://github.com/QinGeneral)，legendyu，[next](https://github.com/potato47)，[nowpaper](https://github.com/Nowpaper)，[wzpan](https://github.com/wzpan)，[子龙山人](https://zilongshanren.com/)，[子山喵叔](https://forum.cocos.org/u/smilesnow0)
+[宝爷](https://forum.cocos.org/u/111304)，[bearhuang](https://blog.csdn.net/hbdatouerzi)，[buckethead](https://forum.cocos.org/u/moneycoder)，[陈皮皮](https://gitee.com/ifaswind)，coolcao，[大风起兮云飞扬](https://forum.cocos.org/u/1111926)，[渡鸦](https://forum.cocos.org/u/valiancer)，[galiohuang](https://4ndroidev.github.io/)，[honmono](https://forum.cocos.org/u/1099263878)，hughxnwang，[jianfeili](http://lijianfei.com)，[jrainliu](https://jrainlau.github.io/#/)，[khanzhang](https://github.com/QinGeneral)，legendyu，[next](https://github.com/potato47)，[nowpaper](https://github.com/Nowpaper)，[wzpan](https://github.com/wzpan)，[子龙山人](https://zilongshanren.com/)，[子山喵叔](https://forum.cocos.org/u/smilesnow0)
