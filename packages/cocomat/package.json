@@ -1,0 +1,35 @@
+{
+  "name": "coco",
+  "version": "0.0.1",
+  "description": "cocomat",
+  "author": "tencent",
+  "main": "main.js",
+  "runtime-resource": {
+    "path": "../../coco-mat",
+    "name": "mat"
+  },
+  "reload": {
+    "ignore": ["../../coco-mat/**/*", "settings/**/*"]
+  },
+  "main-menu": {
+    "i18n:MAIN_MENU.package.title/cocomat/安装": {
+      "message": "coco:install"
+    },
+    "i18n:MAIN_MENU.package.title/cocomat/还原": {
+      "message": "coco:restore"
+    },
+    "i18n:MAIN_MENU.package.title/cocomat/设置": {
+      "message": "coco:open-setting"
+    }
+  },
+  "panel": {
+    "main": "panel/index.js",
+    "type": "dockable",
+    "title": "cocomat",
+    "width": 600,
+    "height": 960
+  },
+  "gizmos": {
+    "CCMFitWidget": "packages://coco/gizmo/ccmfitwidget.js"
+  }
+}

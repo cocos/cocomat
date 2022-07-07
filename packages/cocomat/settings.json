@@ -1,0 +1,10 @@
+{
+	"ignoreModules": [
+		"CCMlib"
+	],
+	"moduleDependences": {
+		"CCMLoader": [
+			"CCMBinding"
+		]
+	}
+}

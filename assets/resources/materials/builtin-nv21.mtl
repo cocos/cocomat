@@ -1,0 +1,15 @@
+{
+  "__type__": "cc.Material",
+  "_name": "builtin-nv21",
+  "_objFlags": 0,
+  "_native": "",
+  "_effectAsset": {
+    "__uuid__": "f26f0fc9-25db-423e-ae80-0912cf20658a"
+  },
+  "_techniqueIndex": 0,
+  "_techniqueData": {
+    "0": {
+      "defines": {}
+    }
+  }
+}

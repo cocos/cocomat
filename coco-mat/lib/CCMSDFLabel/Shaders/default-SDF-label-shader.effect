@@ -1,0 +1,117 @@
+// Copyright (c) 2017-2018 Xiamen Yaji Software Co., Ltd.  
+
+CCEffect %{
+  techniques:
+  - passes:
+    - vert: vs
+      frag: fs
+      blendState:
+        targets:
+        - blend: true
+      rasterizerState:
+        cullMode: none
+      properties:
+        texture: { value: white }
+        softness: { value: 0.0625 }
+        outlineColor: { value: [1, 0, 0, 1],  editor: { type: color } }
+        outlineThickness: { value: 0.4 }
+        shadowColor: { value: [0, 0, 0, 1],  editor: { type: color } }
+        shadowOffset: { value: [0.0005, 0.0005]} // between 0 and spread / textureSize
+        shadowSmoothing: { value: 0.1 } // between 0-0.5
+}%
+
+CCProgram vs %{
+  precision highp float;
+
+  #include <cc-global>
+  #include <cc-local>
+
+  in vec3 a_position;
+  
+  #if USE_COLOR
+    in vec4 a_color;
+    out vec4 v_color;
+  #endif
+
+  in vec2 a_uv0;
+  out vec2 v_uv0;
+
+  void main () {
+    vec4 pos = vec4(a_position, 1);
+
+    #if CC_USE_MODEL
+      pos = cc_matViewProj * cc_matWorld * pos;
+    #else
+      pos = cc_matViewProj * pos;
+    #endif
+
+    v_uv0 = a_uv0;
+
+    #if USE_COLOR
+        v_color = a_color;
+    #endif
+
+    gl_Position = pos;
+  }
+}%
+
+CCProgram fs %{
+  precision highp float;
+  
+  #include <cc-global>
+  #include <alpha-test>
+
+  #if USE_COLOR
+    in vec4 v_color;
+  #endif
+
+  in vec2 v_uv0;
+  uniform sampler2D texture;
+
+  uniform SdfParams {
+    vec4 outlineColor;
+    vec4 shadowColor;
+    vec2 shadowOffset;
+    float outlineThickness;
+    float shadowSmoothing;
+    float softness;
+  };
+
+  void main () {
+    #if USE_COLOR
+      vec4 f_color = v_color;
+    #else
+      vec4 f_color = vec4(1, 1, 1, 1);
+    #endif
+
+    float clipAlpha = 1.0;
+    float distance = texture2D(texture, v_uv0).a;
+    float smoothDistance = smoothstep(0.5 - softness, 0.5 + softness, distance);
+
+    #if USE_SHADOW
+      float shadowDistance = texture2D(texture, v_uv0 - shadowOffset).a;
+      float shadowAlpha = smoothstep(0.5 - shadowSmoothing, 0.5 + shadowSmoothing, shadowDistance) * shadowColor.a;
+      vec4 shadow = vec4(shadowColor.rgb, f_color.a * shadowAlpha);
+    #endif
+
+    vec4 textColor = vec4(1.0, 1.0, 1.0, 1.0);
+
+    #if USE_OUTLINE
+      // Fix outline color cascade.
+      vec4 real_outlineColor = vec4(outlineColor.rgb, f_color.a * outlineColor.a);
+      vec4 mix_color = mix(real_outlineColor, f_color, smoothDistance);
+      float alpha = smoothstep(outlineThickness - softness, outlineThickness + softness, distance);
+      textColor = vec4(mix_color.rgb, mix_color.a * alpha * clipAlpha);
+    #else
+      textColor = vec4(f_color.rgb, f_color.a * smoothDistance * clipAlpha);
+    #endif
+
+    #if USE_SHADOW
+      textColor = mix(shadow, textColor, textColor.a);
+    #endif
+
+    ALPHA_TEST(textColor);
+
+    gl_FragColor = textColor;
+  }
+}%

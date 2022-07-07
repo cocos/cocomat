@@ -1,0 +1,64 @@
+{
+  "extends": ["@tencent/eslint-config-tencent", "@tencent/eslint-config-tencent/ts"],
+  "plugins": [
+    // "compat",
+    // "builtin-compat"
+  ],
+  "rules": {
+    // "comma-dangle": 0,
+    // "no-console": 0,
+    // "no-constant-condition": 0,
+    // "no-extra-boolean-cast": 0,
+    // "no-redeclare": 1,
+    // "no-unused-vars": 1,    
+    // "semi": 1,
+    // "compat/compat": 2,
+    // "no-control-regex": 0,
+    // "no-useless-escape": 1,
+    // "builtin-compat/no-incompatible-builtins": 1
+    "indent": 0,
+    "comma-dangle": 0,
+    "arrow-parens": 0,
+    "@typescript-eslint/indent": 0,
+    "@typescript-eslint/no-require-imports": 0,
+    "@typescript-eslint/prefer-optional-chain": 0,
+    "@typescript-eslint/no-this-alias": 0,
+    "@typescript-eslint/quotes": 0
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "mocha": true
+  },
+  "globals": {
+    "cc": false,
+    "gl": false,
+    "sp": false,
+    "wx": false,
+    "jsb": false,
+    "CC_EDITOR": false,
+    "CC_DEV": false,
+    "CC_JSB": false,
+    "_ccsg": false,
+    "QRCode": false,
+    "QRErrorCorrectLevel": false,
+    "$": false,
+    "XDomainRequest": false,
+    "CC_WECHATGAME": false,
+    "webkitOfflineAudioContext": false,
+    "ccm": false,
+    "CC_PHYSICS_BUILTIN": false,
+    "CC_PHYSICS_CANNON": false,
+    "CC_BUILD": false,
+    "Editor": false
+  },
+  "settings": {
+    "polyfills": ["promises"],
+    "builtin-compat-ignore": ["ArrayBuffer", "find", "includes", "log2", "parseFloat", "parseInt", "assign", "values", "trimLeft", "startsWith", "endsWith", "repeat", "padStart"]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "__type__": "cc.Material",
+  "_name": "builtin-nv12",
+  "_objFlags": 0,
+  "_native": "",
+  "_effectAsset": {
+    "__uuid__": "8ed9f9c5-5d4c-45cf-9c1b-db38068b9096"
+  },
+  "_techniqueIndex": 0,
+  "_techniqueData": {
+    "0": {
+      "defines": {}
+    }
+  }
+}

@@ -1,0 +1,2 @@
+declare module 'md5' {
+}

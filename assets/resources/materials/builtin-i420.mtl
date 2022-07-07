@@ -1,0 +1,15 @@
+{
+  "__type__": "cc.Material",
+  "_name": "builtin-i420",
+  "_objFlags": 0,
+  "_native": "",
+  "_effectAsset": {
+    "__uuid__": "498f7ace-0036-4c06-964e-d5e73a680854"
+  },
+  "_techniqueIndex": 0,
+  "_techniqueData": {
+    "0": {
+      "defines": {}
+    }
+  }
+}

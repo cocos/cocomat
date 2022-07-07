@@ -1,0 +1,15 @@
+{
+  "__type__": "cc.Material",
+  "_name": "builtin-rgba",
+  "_objFlags": 0,
+  "_native": "",
+  "_effectAsset": {
+    "__uuid__": "10879b4b-d943-4e9c-b2b5-6add0138a825"
+  },
+  "_techniqueIndex": 0,
+  "_techniqueData": {
+    "0": {
+      "defines": {}
+    }
+  }
+}

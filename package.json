@@ -1,0 +1,38 @@
+{
+  "dependencies": {
+    "base64-arraybuffer": "^0.1.5",
+    "base64-js": "^1.2.1",
+    "cheerio": "0.20.0",
+    "d3-shape": "^1.2.0",
+    "domhandler": "2.3.0",
+    "image-size": "^0.8.3",
+    "lodash": "^4.17.21",
+    "typescript": "^4.3.5",
+    "upng-js": "^2.1.0",
+    "url-parse": "^1.5.3"
+  },
+  "devDependencies": {
+    "@tencent/eslint-config-tencent": "^0.12.3",
+    "@typescript-eslint/eslint-plugin": "^4.28.4",
+    "@typescript-eslint/parser": "^4.28.4",
+    "browserslist": "^4.16.6",
+    "caniuse-lite": "^1.0.30001247",
+    "cz-conventional-changelog": "^2.1.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-builtin-compat": "0.0.2",
+    "eslint-plugin-compat": "^2.7.0",
+    "eslint-plugin-import": "^2.23.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "browserslist": [
+    "chrome >= 49",
+    "iOS >= 10"
+  ],
+  "scripts": {
+    "eslint": "eslint --fix"
+  }
+}

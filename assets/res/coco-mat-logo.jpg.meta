@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "f662b119-90ce-486c-a428-f4e3361a3379",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1000,
+  "height": 402,
+  "platformSettings": {},
+  "subMetas": {
+    "coco-mat-logo": {
+      "ver": "1.0.4",
+      "uuid": "4db6509f-51dd-4b05-b871-96e164d48a69",
+      "rawTextureUuid": "f662b119-90ce-486c-a428-f4e3361a3379",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 1000,
+      "height": 402,
+      "rawWidth": 1000,
+      "rawHeight": 402,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
